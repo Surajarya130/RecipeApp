@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Find Dishes</title>
+  </head>
+  <body>
+      <h1 class="text-center mt-2 text-white">A new dish to cook!</h1>
+
+
+      <nav class="navbar navbar-light">
+
+
+          <form class="form-inline mx-auto" id="myForm">
+            <input type="text" class="form-control" id="searchInput" placeholder="Find The Meal" aria-label="Username">
+            <button class="btn btn-primary m-2" type="submit" id="searchBtn">
+              <img src="https://img.icons8.com/fluent-systems-filled/24/000000/search.png"/>
+            </button>
+            <span class="btn btn-warning" id="randomBtn">
+              <img class="randBtn" src="https://img.icons8.com/ios/50/000000/dot-logo.png"/>
+            </span>
+          </form>
+      </nav>
+
+      <div class="container"  id="tagLine">
+        <div class="row">
+          <div class="col">
+            <br><br><br>
+            <h2 class="text-center text-success">Find your dish here!</h2>
+            <br>
+            <h4 class="text-center text-secondary">
+              We have set of more than 250 recipies from glob including veg, non-veg, desert etc.  
+              Search the food in search box, like: <span class="text-light">Chicken, Fish, Soup etc...</span>
+              <br>Or click on random button to Generate a random Meal.
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p class="text-info text-center mb-3 textEle" style="font-size:x-large;" id="showMatchedResult"></p>
+        <div class="row text-center" id="dishPhoto">
+ 
+        </div>
+      </div>
+
+      <!-- Second Block of Code  -->
+
+        <div class="container blockTwo" id="blockTwo" >
+
+          <div class="row align-items-center mb-5 mt-2">
+              <div class=" col-sm-5  mx-auto" id="DOMDishPhoto">
+                
+
+              </div>
+
+              <div class="col-sm-7">
+
+                  
+                  <div class="row">
+            
+                      <!--  & Origin -->
+                      <div class="col-12 mb-4">
+                          <h3 class="text-info" id="dishName"></h3>
+                          <h6 class="text-info" id="origin"> </h6>
+                          <h6 class="text-info" id="category"> </h6>
+                      </div>      
+                  </div>
+            
+                  <div class="row">
+                      <!-- Ingredients -->
+                      <div class="col-6">
+                          <h4 class="text-light" id="ingredHeading"></h4>
+                          <ul id="ingredients">
+
+                          </ul>
+                      </div>
+                      <!-- Quantity -->
+                      <div class="col-6">
+                          <h4 class="text-info" id="quantHeading"></h4>
+                          <ul id="quantity">
+
+                          </ul>
+                      </div>
+                  </div>
+            </div>
+          </div> 
+          
+        </div>
+        
+
+        <div class="container mt-3" id="blockThree ">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+                <h3 class="text-white text-center" id="instructHeading"></h3>
+                <p class="text-white" id="instruction">
+        
+                </p>
+            </div>
+            <div class="col-md-5 text-center">
+
+
+              <iframe class="linkVideo" height="300px" width="100%" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+            </div>
+        </div>
+        </div>
+
+
+
+      
+      <!-- Optional JavaScript -->
+      <script src="main.js"></script>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
